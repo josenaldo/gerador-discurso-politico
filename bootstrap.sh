@@ -60,7 +60,7 @@ chmod -R 777 /home/vagrant/node_modules/
 rm -rf /var/www
 ln -fs /vagrant/app /var/www
 ln -fs /usr/bin/nodejs /usr/bin/node 
-ln -s /home/vagrant/node_modules /vagrant/code/frontend/node_modules
+ln -s /home/vagrant/node_modules /vagrant/node_modules
 
 #################################################################################### 
 # INSTALL FRONTEND TOOLING
