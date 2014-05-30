@@ -1,0 +1,2 @@
+rm -rf  $OPENSHIFT_REPO_DIR/www
+ln -sf  $OPENSHIFT_REPO_DIR/app  $OPENSHIFT_REPO_DIR/www
