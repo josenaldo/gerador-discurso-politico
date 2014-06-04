@@ -5,24 +5,36 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Gerador de Discurso da Esquerda!</title>
         <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css">
+        <link rel="stylesheet" href="../bower_components/font-awesome/css/font-awesome.min.css">
         <link rel="stylesheet" href="css/app.css"/>
         <script src="bower_components/html5-boilerplate/js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
-    <body ng-controller="MainCtrl">             
-        <div class="site-wrapper">
-            <div class="site-wrapper-inner">
-                <div class="cover-container">                    
-                    <div class="inner cover">
-                        <h1 class="cover-heading">Gerador de Argumentos da Esquerda</h1>
-                        <p class="lead"> {{discurso}}</p>
-                        <p class="lead">
-                        <button ng-click="geraDiscurso()" class="btn btn-lg btn-default" >Fala Militante!</button>
-                        </p>
-                    </div>                   
+    <body>
+
+
+        <div class="container">
+            <div class="row icons">
+                <div class="col-sm-6 discurso-button-esquerda">
+                    <a href="#/esquerda" class="discurso-button btn btn-danger">
+                        <i class="icon fa fa-3x fa-align-left "></i>
+                        <span class="label">Argumentos da Esquerda</span>
+                    </a>
+                </div>
+                <div class="col-sm-6 discurso-button-direita">
+                    <a href="#/direita" class="discurso-button btn btn-primary">
+                        <i class="icon fa fa-3x fa-align-right"></i>
+                        <span class="label">Argumentos da Direita</span>
+                    </a>
                 </div>
             </div>
         </div>
+
+
+        <div class="container">
+            <div ng-view></div>
+        </div>
         <script src="bower_components/angular/angular.js"></script>
+        <script src="bower_components/angular-route/angular-route.js"></script>
         <script src="js/app.js"></script>
         <script src="js/services.js"></script>
         <script src="js/controllers.js"></script>

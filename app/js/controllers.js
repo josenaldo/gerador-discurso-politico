@@ -2,10 +2,18 @@
 
 /* Controllers */
 
-geradorApp.controller('MainCtrl', ['$scope','Militante', function ($scope, Militante) {
-  	$scope.discurso = Militante.fala();
+angular.module('geradorApp').controller('EsquerdaCtrl', ['$scope','Petralha', function ($scope, Petralha) {
+  	$scope.discurso = Petralha.fala();
 
   	$scope.geraDiscurso = function() {
-  		$scope.discurso = Militante.fala();
+  		$scope.discurso = Petralha.fala();
+  	};
+}]);
+
+angular.module('geradorApp').controller('DireitaCtrl', ['$scope','Coxinha', function ($scope, Coxinha) {
+  	$scope.discurso = Coxinha.fala();
+
+  	$scope.geraDiscurso = function() {
+  		$scope.discurso = Coxinha.fala();
   	};
 }]);
